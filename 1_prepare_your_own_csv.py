@@ -16,8 +16,8 @@ f_degroupcsv.close()    #必須close_file, 否則當作沒有關閉
 '''<<利用csv讀取文件的圖片名稱和label名稱>>'''
 dict_to_save = {}    #把csv的資料以dict的形式儲存
 label_set = set()    #把label的資料以set的形式儲存
-for i in data_degroupcsv[1:5]:    #[1:5]表示讀取第1,2,3,4筆資料, (第0筆資料是標籤), for i in data_degroupcsv: 表示逐筆資料處理
-    split_line = i.split(',')    #將list中一整串字串以','分裂為小字串, 例如'xxx.jpeg,350,720,83,240,134,284,11\n' --> 'xxx.jpeg', '350', '720', '83', '240', '134', '284', '11\n'
+for data in data_degroupcsv[1:5]:    #[1:5]表示讀取第1,2,3,4筆資料, (第0筆資料是標籤), for i in data_degroupcsv: 表示逐筆資料處理
+    split_line = data.split(',')    #將list中一整串字串以','分裂為小字串, 例如'xxx.jpeg,350,720,83,240,134,284,11\n' --> 'xxx.jpeg', '350', '720', '83', '240', '134', '284', '11\n'
     print("split_line:", split_line)    
     img_name = split_line[0]    #取出第0個元素, 即圖片名稱
     print("img_name:", img_name)
