@@ -1,5 +1,7 @@
 '''this is a demo about how the data is stored in dictionary'''
-
+'''我們使用list_img模擬讀取csv資料後的情況,
+然後通過split(',')來把想要的字串記錄在img_name及img_label
+最後通過dict來保存一一對應關係'''
 list_img = ['apple.jpg,11\n','orange.jpg,12\n', ,'banana.jpg,13\n']
 dict_to_save = {}    #把csv的資料以dict的形式儲存
 label_set = set()    #把label的資料以set的形式儲存
