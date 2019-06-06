@@ -5,7 +5,7 @@ Created on Tue Jun  4 07:47:18 2019
 @author: acer
 """
 
-'''<<5行代碼讀取csv檔>>'''
+'''<<5 lines code read csv_file>>'''
 #degroup_csv_file = 'C:/Users/acer/Desktop/python_teaching/degroup.csv'
 degroup_csv_file = 'degroup.csv'
 f_degroupcsv = open(degroup_csv_file,'r')     #打開csv_file, 'r'是指唯讀read
